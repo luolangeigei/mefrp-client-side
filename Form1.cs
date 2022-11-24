@@ -16,7 +16,7 @@ using System.Threading;
 using System.Dynamic;
 using static System.Windows.Forms.AxHost;
 
-namespace $safeprojectname$
+namespace WindowsFormsApp1
 {
     
     public partial class Form1 : MaterialForm
@@ -76,8 +76,7 @@ namespace $safeprojectname$
             common.awa = suidao_save.Text;
             Form2 f = new Form2();
             f.ShowDialog();
-           // string fh_1 = RunCmd("cd " + AppDomain.CurrentDomain.BaseDirectory);    //执行命令
-            //string fh_2 = RunCmd("frpc.exe -c awa\\" + suidao_save.Text + ".ini");
+            string fh_2 = RunCmd("frpc.exe -c awa\\" + suidao_save.Text + ".ini");
             //char[] delimiterChars = { '\n' };
             //string[] words = fh_2.Split(delimiterChars);
             //int a;
@@ -128,6 +127,12 @@ namespace $safeprojectname$
         private void materialLabel1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://dash.laecloud.com/modules/tunnels/compact");
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.ShowDialog();
         }
     }
 

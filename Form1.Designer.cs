@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$
+﻿namespace WindowsFormsApp1
 {
     partial class Form1
     {
@@ -44,9 +44,10 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.suidao_save = new MaterialSkin.Controls.MaterialComboBox();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
-            this.关于 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.关于 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialCard1.SuspendLayout();
             this.materialCard3.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -430,6 +431,7 @@
             // materialCard2
             // 
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialButton3);
             this.materialCard2.Controls.Add(this.pictureBox1);
             this.materialCard2.Controls.Add(this.materialLabel3);
             this.materialCard2.Controls.Add(this.关于);
@@ -443,18 +445,6 @@
             this.materialCard2.Size = new System.Drawing.Size(437, 217);
             this.materialCard2.TabIndex = 3;
             // 
-            // 关于
-            // 
-            this.关于.AutoSize = true;
-            this.关于.Depth = 0;
-            this.关于.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.关于.Location = new System.Drawing.Point(11, 11);
-            this.关于.MouseState = MaterialSkin.MouseState.HOVER;
-            this.关于.Name = "关于";
-            this.关于.Size = new System.Drawing.Size(37, 19);
-            this.关于.TabIndex = 0;
-            this.关于.Text = "关于:";
-            // 
             // materialLabel3
             // 
             this.materialLabel3.AutoSize = true;
@@ -467,15 +457,47 @@
             this.materialLabel3.TabIndex = 1;
             this.materialLabel3.Text = "由罗澜制作，并引用了Material2开源库";
             // 
+            // 关于
+            // 
+            this.关于.AutoSize = true;
+            this.关于.Depth = 0;
+            this.关于.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.关于.Location = new System.Drawing.Point(11, 11);
+            this.关于.MouseState = MaterialSkin.MouseState.HOVER;
+            this.关于.Name = "关于";
+            this.关于.Size = new System.Drawing.Size(37, 19);
+            this.关于.TabIndex = 0;
+            this.关于.Text = "关于:";
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::$safeprojectname$.Properties.Resources.th;
+            this.pictureBox1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.th;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(10, 158);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 54);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // materialButton3
+            // 
+            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton3.Depth = 0;
+            this.materialButton3.HighEmphasis = true;
+            this.materialButton3.Icon = null;
+            this.materialButton3.Location = new System.Drawing.Point(24, 67);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton3.Name = "materialButton3";
+            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton3.Size = new System.Drawing.Size(158, 36);
+            this.materialButton3.TabIndex = 3;
+            this.materialButton3.Text = "服务器列表";
+            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton3.UseAccentColor = false;
+            this.materialButton3.UseVisualStyleBackColor = true;
+            this.materialButton3.Click += new System.EventHandler(this.materialButton3_Click);
             // 
             // Form1
             // 
@@ -520,6 +542,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel 关于;
+        private MaterialSkin.Controls.MaterialButton materialButton3;
     }
 }
 

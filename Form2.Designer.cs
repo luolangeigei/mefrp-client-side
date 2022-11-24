@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$
+﻿namespace WindowsFormsApp1
 {
     partial class Form2
     {
